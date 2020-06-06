@@ -1,0 +1,69 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="CXFService:war exploded">
+    <output-path>$PROJECT_DIR$/target/CXFService</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CXFService" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-core:3.3.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:2.3.2" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:3.0.8" />
+          <element id="library" level="project" name="Maven: org.jvnet.staxex:stax-ex:1.8.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.16" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:5.0.3" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" />
+          <element id="library" level="project" name="Maven: org.apache.ws.xmlschema:xmlschema-core:2.2.4" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-xjc:2.3.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:xsom:2.3.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:codemodel:2.3.2" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind.external:rngom:2.3.2" />
+          <element id="library" level="project" name="Maven: com.sun.xml.dtd-parser:dtd-parser:1.4.1" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-tools:3.0.8" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant:1.10.5" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant-launcher:1.10.5" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind.external:relaxng-datatype:2.3.2" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-frontend-jaxws:3.3.2" />
+          <element id="library" level="project" name="Maven: xml-resolver:xml-resolver:1.2" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm:7.0" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-bindings-soap:3.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-wsdl:3.3.2" />
+          <element id="library" level="project" name="Maven: wsdl4j:wsdl4j:1.6.3" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-databinding-jaxb:3.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-bindings-xml:3.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-frontend-simple:3.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-ws-addr:3.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-ws-policy:3.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.neethi:neethi:3.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-transports-http:3.3.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-transports-http-jetty:3.1.8" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-server:9.2.15.v20160210" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-util:9.2.15.v20160210" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-io:9.2.15.v20160210" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-security:9.2.15.v20160210" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-continuation:9.2.15.v20160210" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-http:9.2.15.v20160210" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/CXFService/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="CXFService/web/Web" />
+    </root>
+  </artifact>
+</component>

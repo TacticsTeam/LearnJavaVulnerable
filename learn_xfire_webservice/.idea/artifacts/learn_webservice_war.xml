@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="learn_webservice:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="learn_xfire_webservice.war">
+      <element id="artifact" artifact-name="learn_webservice:war exploded" />
+    </root>
+  </artifact>
+</component>

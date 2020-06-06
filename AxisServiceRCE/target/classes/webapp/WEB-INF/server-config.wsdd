@@ -1,0 +1,40 @@
+<deployment name="defaultClientConfig"
+            xmlns="http://xml.apache.org/axis/wsdd/"
+            xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+    <globalConfiguration>
+        <parameter name="adminPassword" value=""/>
+        <parameter name="attachments.Directory" value="/tmp/"/>
+        <parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+        <parameter name="sendXsiTypes" value="true"/>
+        <parameter name="sendMultiRefs" value="true"/>
+        <parameter name="sendXMLDeclaration" value="true"/>
+        <parameter name="dotNetSoapEncFix" value="true"/>
+        <parameter name="axis.sendMinimizedElements" value="true"/>
+    </globalConfiguration>
+
+    <handler name="soapmonitor" type="java:org.apache.axis.handlers.SOAPMonitorHandler"/>
+    <handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+    <handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+    <!--<handler type="java:org.apache.axis.handlers.SimpleAuthenticationHandler" name="Authenticate"/>-->
+
+    <service name="AdminService" provider="java:MSG">
+        <parameter name="allowedMethods" value="AdminService"/>
+        <parameter name="enableRemoteAdmin" value="false"/>
+        <parameter name="className" value="org.apache.axis.utils.Admin"/>
+    </service>
+
+    <transport name="http">
+        <requestFlow>
+            <handler type="URLMapper"/>
+            <handler type="soapmonitor"/>
+            <!--<handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>-->
+        </requestFlow>
+    </transport>
+    <!--<transport name="local">-->
+        <!--<responseFlow>-->
+            <!--<handler type="LocalResponder"/>-->
+        <!--</responseFlow>-->
+    <!--</transport>-->
+
+</deployment>

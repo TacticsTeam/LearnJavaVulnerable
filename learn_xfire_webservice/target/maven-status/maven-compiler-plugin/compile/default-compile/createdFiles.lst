@@ -1,0 +1,15 @@
+org/javaweb/service/FlagService.class
+org/javaweb/service/BOSPServiceImpl.class
+org/javaweb/service/BookService.class
+org/javaweb/service/AccptSurveyErp2EcpmService.class
+org/javaweb/service/TaskService.class
+org/javaweb/service/BOSPService.class
+org/javaweb/service/BookServiceImpl.class
+org/javaweb/service/FlagServiceImpl.class
+org/javaweb/service/UserService.class
+org/javaweb/service/AccptSurveyErp2EcpmServiceImpl.class
+org/javaweb/service/xfire_test.class
+org/javaweb/entry/Book.class
+org/javaweb/service/UserServiceImpl.class
+org/javaweb/service/TaskServiceImpl.class
+org/javaweb/StartService.class

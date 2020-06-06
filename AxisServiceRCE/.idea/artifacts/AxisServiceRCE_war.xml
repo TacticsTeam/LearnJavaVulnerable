@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AxisServiceRCE:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="AxisServiceRCE.war">
+      <element id="artifact" artifact-name="AxisServiceRCE:war exploded" />
+    </root>
+  </artifact>
+</component>

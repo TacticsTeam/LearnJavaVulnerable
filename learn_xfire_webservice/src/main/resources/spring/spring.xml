@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <import resource="classpath:org/codehaus/xfire/spring/xfire.xml" />
+    <bean id="baseWebService" class="org.codehaus.xfire.spring.remoting.XFireExporter" lazy-init="false" abstract="true">
+        <property name="serviceFactory" ref="xfire.serviceFactory" />
+        <property name="xfire" ref="xfire" />
+    </bean>
+
+    <bean id="AccptSurveyErp2EcpmServiceWS"  class="org.javaweb.service.AccptSurveyErp2EcpmServiceImpl"></bean>
+    <bean id="AccptSurveyErp2EcpmService" parent="baseWebService">
+        <property name="serviceBean" ref="AccptSurveyErp2EcpmServiceWS"></property>
+        <property name="serviceClass" value="org.javaweb.service.AccptSurveyErp2EcpmService"></property>
+    </bean>
+
+    <bean id="BOSPServiceWs" class="org.javaweb.service.BOSPServiceImpl"></bean>
+    <bean id="BOSPService" parent="baseWebService">
+        <property name="serviceBean" ref="BOSPServiceWs"></property>
+        <property name="serviceClass" value="org.javaweb.service.BOSPService"></property>
+    </bean>
+
+    <bean id="UserWs" class="org.javaweb.service.UserServiceImpl"></bean>
+    <bean id="UserService" parent="baseWebService">
+        <property name="serviceBean" ref="BookWs"></property>
+        <property name="serviceClass" value="org.javaweb.service.UserService"/>
+    </bean>
+
+    <bean id="FlagWs" class="org.javaweb.service.FlagServiceImpl"></bean>
+    <bean id="FlagService" parent="baseWebService">
+        <property name="serviceClass" value="org.javaweb.service.FlagService"></property>
+        <property name="serviceBean" ref="FlagWs"></property>
+    </bean>
+
+    <bean id ="BookWs" class="org.javaweb.service.BookServiceImpl"></bean>
+    <bean id="BookService" parent="baseWebService">
+        <property name="serviceBean" ref="BookWs"></property>
+        <property name="serviceClass" value="org.javaweb.service.BookService" />
+    </bean>
+
+    <bean id="TaskServiceWs" class="org.javaweb.service.TaskServiceImpl"></bean>
+    <bean id="TaskService" parent="baseWebService">
+        <property name="serviceBean" ref="TaskServiceWs"></property>
+        <property name="serviceClass" value="org.javaweb.service.TaskService"></property>
+    </bean>
+
+</beans>
